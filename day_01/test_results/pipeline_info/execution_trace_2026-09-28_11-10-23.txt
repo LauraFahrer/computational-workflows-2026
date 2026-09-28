@@ -1,0 +1,2 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	1f/4eab14	13093	NFCORE_DIFFERENTIALABUNDANCE:DIFFERENTIALABUNDANCE:GUNZIP_GTF (Mus_musculus.GRCm38.81.gtf.gz)	FAILED	1	2026-09-28 11:10:46.427	169ms	140ms	-	-	-	-	-
