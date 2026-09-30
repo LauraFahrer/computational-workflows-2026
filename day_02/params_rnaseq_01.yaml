@@ -1,5 +1,7 @@
 input: SRA_runs/samplesheet/samplesheet_final.csv
 outdir: /mnt/d/Bioinformatik_MSc_alt/CW_BMD/OUTDIR/Day_2
 save_align_intermeds: true
-genome: GRCm38
+gtf: https://ftp.ensembl.org/pub/release-102/gtf/mus_musculus/Mus_musculus.GRCm38.102.gtf.gz
+fasta: https://ftp.ensembl.org/pub/release-102/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.19.fa.gz
 aligner: hisat2
+min_mapped_reads: 0
