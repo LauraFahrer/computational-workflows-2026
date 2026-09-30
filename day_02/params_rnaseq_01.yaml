@@ -1,0 +1,5 @@
+input: SRA_runs/samplesheet/samplesheet_final.csv
+outdir: /mnt/d/Bioinformatik_MSc_alt/CW_BMD/OUTDIR/Day_2
+save_align_intermeds: true
+genome: GRCm38
+aligner: hisat2
