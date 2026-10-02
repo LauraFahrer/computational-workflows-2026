@@ -116,8 +116,20 @@ workflow{
     // Task 14 - Nextflow has the concept of maps. Write the names in the maps in this channel to a file called "names.txt". Each name should be on a new line. 
     //           Store the file in the "results" directory under the name "names.txt"
 
-    if (params.step == 14) {
+    process WRITE_NAMES {
+        input:
+        val person
 
+        output:
+        path 'names.txt'
+
+        script:
+        """
+        echo '${person.name}' >> names.txt
+        """
+    }
+
+    if (params.step == '14') {
         in_ch = channel.of(
             ['name': 'Harry', 'title': 'student'],
             ['name': 'Ron', 'title': 'student'],
@@ -127,7 +139,7 @@ workflow{
             ['name': 'Hagrid', 'title': 'groundkeeper'],
             ['name': 'Dobby', 'title': 'hero'],
         )
-    
+        WRITE_NAMES(in_ch)
     }
 
 }
