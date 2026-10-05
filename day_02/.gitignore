@@ -1,0 +1,8 @@
+work/
+.nextflow/
+.nextflow.log*
+results_fetch
+SRA_runs
+rnaseq_out_allsamples
+DOWNLOAD_FETCHNGS_RESULTS.txt
+DOWNLOAD_MM_CHR19.txt
