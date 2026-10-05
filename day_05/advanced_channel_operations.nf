@@ -1,13 +1,24 @@
 params.step = 0
 
+process PRINT_SAMPLESHEET {
+    debug(true)
+
+    input:
+    val param
+
+    script:
+    """
+    python -c "print(param)
+    """
+}
 
 workflow{
 
     // Task 1 - Read in the samplesheet.
 
-    if (params.step == 1) {
-        channel.fromPath('samplesheet.csv')
-            // ...
+    if (params.step == '1') {
+        in_ch = channel.fromPath('samplesheet.csv')
+        PRINT_SAMPLESHEET(in_ch)
     }
 
     // Task 2 - Read in the samplesheet and create a meta-map with all metadata and another list with the filenames ([[metadata_1 : metadata_1, ...], [fastq_1, fastq_2]]).

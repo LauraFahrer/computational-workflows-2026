@@ -1,63 +1,120 @@
-Oct-02 14:02:59.792 [main] DEBUG nextflow.cli.Launcher - $> nextflow run basics_processes.nf --step 5
-Oct-02 14:03:00.033 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.6
-Oct-02 14:03:00.072 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/laura/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.1,nf-tower@1.28.2,nf-wave@1.21.0
-Oct-02 14:03:00.125 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Oct-02 14:03:00.127 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Oct-02 14:03:00.133 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
-Oct-02 14:03:00.162 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
-Oct-02 14:03:00.390 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
-Oct-02 14:03:00.402 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Oct-02 14:03:00.471 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
-Oct-02 14:03:00.592 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Oct-02 14:03:00.593 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Oct-02 14:03:00.622 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/laura/.nextflow/secrets/store.json
-Oct-02 14:03:00.644 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@3b05a99b] - activable => nextflow.secret.LocalSecretsProvider@3b05a99b
-Oct-02 14:03:00.668 [main] DEBUG nextflow.cli.CmdRun - Launching `basics_processes.nf` [stupefied_booth] - revision: 4579f47253
-Oct-02 14:03:00.874 [main] DEBUG nextflow.Session - Session UUID: 0919e381-7525-43bd-8338-1efc8b824c6d
-Oct-02 14:03:00.874 [main] DEBUG nextflow.Session - Run name: stupefied_booth
-Oct-02 14:03:00.876 [main] DEBUG nextflow.Session - Executor pool size: 8
-Oct-02 14:03:00.890 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Oct-02 14:03:00.900 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Oct-02 14:03:00.932 [main] DEBUG nextflow.cli.CmdRun - 
+Oct-03 16:46:00.574 [main] DEBUG nextflow.cli.Launcher - $> nextflow run advanced_channel_operations.nf --step 1
+Oct-03 16:46:00.901 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.6
+Oct-03 16:46:00.948 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/laura/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.1,nf-tower@1.28.2,nf-wave@1.21.0
+Oct-03 16:46:00.988 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-03 16:46:00.989 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-03 16:46:00.994 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Oct-03 16:46:01.026 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Oct-03 16:46:01.240 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Oct-03 16:46:01.250 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-03 16:46:01.305 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Oct-03 16:46:01.394 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-03 16:46:01.394 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-03 16:46:01.418 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/laura/.nextflow/secrets/store.json
+Oct-03 16:46:01.436 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@327c7bea] - activable => nextflow.secret.LocalSecretsProvider@327c7bea
+Oct-03 16:46:01.479 [main] DEBUG nextflow.cli.CmdRun - Launching `advanced_channel_operations.nf` [reverent_carlsson] - revision: 632b01cbf0
+Oct-03 16:46:01.630 [main] DEBUG nextflow.Session - Session UUID: ea7184bf-e92c-4e56-9e3a-428bbf1c5198
+Oct-03 16:46:01.631 [main] DEBUG nextflow.Session - Run name: reverent_carlsson
+Oct-03 16:46:01.632 [main] DEBUG nextflow.Session - Executor pool size: 8
+Oct-03 16:46:01.645 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Oct-03 16:46:01.656 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-03 16:46:01.688 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 26.04.6 build 12646
   Created: 09-07-2026 18:49 UTC (20:49 CEST)
   System: Linux 6.6.87.2-microsoft-standard-WSL2
   Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 25.0.4.1+1-1-24.04.4-Ubuntu
   Encoding: UTF-8 (UTF-8)
-  Process: 58889@LaurasHuawei [127.0.1.1]
+  Process: 74521@LaurasHuawei [127.0.1.1]
   CPUs: 8 - Mem: 15.4 GB (12.6 GB) - Swap: 8 GB (8 GB)
-Oct-02 14:03:00.965 [main] DEBUG nextflow.Session - Work-dir: /home/laura/CW_BMD/computational-workflows-2026/day_05/work [ext2/ext3]
-Oct-02 14:03:00.965 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/laura/CW_BMD/computational-workflows-2026/day_05/bin
-Oct-02 14:03:00.978 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Oct-02 14:03:00.993 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Oct-02 14:03:00.996 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
-Oct-02 14:03:01.041 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Oct-02 14:03:01.056 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
-Oct-02 14:03:01.143 [main] DEBUG nextflow.Session - Session start
-Oct-02 14:03:01.156 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
-Oct-02 14:03:01.963 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Oct-02 14:03:02.247 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Oct-02 14:03:02.247 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Oct-02 14:03:02.261 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Oct-02 14:03:02.274 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.4 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-Oct-02 14:03:02.277 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Oct-02 14:03:02.350 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'UPPERCASE': maxForks=0; fair=false; array=0
-Oct-02 14:03:02.467 [main] DEBUG nextflow.Session - Process names: PRINTUPPER, WRITETOFILE, SAYHELLO_PARAM, UPPERCASE, SAYHELLO, SAYHELLO_FILE, SAYHELLO_PYTHON
-Oct-02 14:03:02.470 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
-Oct-02 14:03:02.472 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > UPPERCASE
-Oct-02 14:03:02.474 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Main: /home/laura/CW_BMD/computational-workflows-2026/day_05/basics_processes.nf
-Oct-02 14:03:02.474 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Oct-02 14:03:02.475 [main] DEBUG nextflow.Session - Session await
-Oct-02 14:03:02.699 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Oct-02 14:03:02.705 [Task submitter] INFO  nextflow.Session - [f9/e63152] Submitted process > UPPERCASE (1)
-Oct-02 14:03:02.733 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: UPPERCASE (1); status: COMPLETED; exit: 0; error: -; workDir: /home/laura/CW_BMD/computational-workflows-2026/day_05/work/f9/e6315232ffbb197953ab0f690c9caa]
-Oct-02 14:03:02.736 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Oct-02 14:03:02.773 [main] DEBUG nextflow.Session - Session await > all processes finished
-Oct-02 14:03:02.825 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Oct-02 14:03:02.825 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Oct-02 14:03:02.829 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
-Oct-02 14:03:02.850 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=6ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
-Oct-02 14:03:03.001 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Oct-02 14:03:03.091 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Oct-02 14:03:03.091 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Oct-03 16:46:01.715 [main] DEBUG nextflow.Session - Work-dir: /home/laura/CW_BMD/computational-workflows-2026/day_05/work [ext2/ext3]
+Oct-03 16:46:01.716 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/laura/CW_BMD/computational-workflows-2026/day_05/bin
+Oct-03 16:46:01.730 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-03 16:46:01.746 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Oct-03 16:46:01.750 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Oct-03 16:46:01.800 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-03 16:46:01.814 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Oct-03 16:46:01.906 [main] DEBUG nextflow.Session - Session start
+Oct-03 16:46:01.916 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Oct-03 16:46:02.532 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-03 16:46:02.737 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-03 16:46:02.737 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-03 16:46:02.757 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-03 16:46:02.772 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.4 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Oct-03 16:46:02.777 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Oct-03 16:46:02.854 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PRINT_SAMPLESHEET': maxForks=0; fair=false; array=0
+Oct-03 16:46:02.961 [main] DEBUG nextflow.Session - Process names: PRINT_SAMPLESHEET
+Oct-03 16:46:02.966 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Oct-03 16:46:02.978 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PRINT_SAMPLESHEET
+Oct-03 16:46:02.983 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Main: /home/laura/CW_BMD/computational-workflows-2026/day_05/advanced_channel_operations.nf
+Oct-03 16:46:02.983 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-03 16:46:02.983 [main] DEBUG nextflow.Session - Session await
+Oct-03 16:46:03.233 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-03 16:46:03.238 [Task submitter] INFO  nextflow.Session - [40/001788] Submitted process > PRINT_SAMPLESHEET (1)
+Oct-03 16:46:03.305 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: PRINT_SAMPLESHEET (1); status: COMPLETED; exit: 2; error: -; workDir: /home/laura/CW_BMD/computational-workflows-2026/day_05/work/40/00178887a641cd35da15464ad224bd]
+Oct-03 16:46:03.306 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-03 16:46:03.322 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=PRINT_SAMPLESHEET (1); work-dir=/home/laura/CW_BMD/computational-workflows-2026/day_05/work/40/00178887a641cd35da15464ad224bd
+  error [nextflow.exception.ProcessFailedException]: Process `PRINT_SAMPLESHEET (1)` terminated with an error exit status (2)
+Oct-03 16:46:03.353 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'PRINT_SAMPLESHEET (1)'
+
+Caused by:
+  Process `PRINT_SAMPLESHEET (1)` terminated with an error exit status (2)
+
+
+Command executed:
+
+  python -c "print(param)
+
+Command exit status:
+  2
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: unexpected EOF while looking for matching `"'
+
+Work dir:
+  /home/laura/CW_BMD/computational-workflows-2026/day_05/work/40/00178887a641cd35da15464ad224bd
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Oct-03 16:46:03.365 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `PRINT_SAMPLESHEET (1)` terminated with an error exit status (2)
+Oct-03 16:46:03.367 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-03 16:46:03.412 [TaskFinalizer-1] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=38ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Oct-03 16:46:03.454 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Oct-03 16:46:03.455 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-03 16:46:03.458 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=38ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Oct-03 16:46:03.459 [TaskFinalizer-1] DEBUG nextflow.Session - null
+java.lang.InterruptedException
+	at java.base/java.lang.Object.wait0(Native Method)
+	at java.base/java.lang.Object.wait(Object.java:389)
+	at java.base/java.lang.Thread.join(Thread.java:1887)
+	at java.base/java.lang.Thread.join(Thread.java:1963)
+	at nextflow.trace.AnsiLogObserver.onFlowComplete(AnsiLogObserver.groovy:559)
+	at nextflow.Session$_notifyFlowComplete_lambda38.doCall(Session.groovy:1093)
+	at nextflow.Session.notifyEvent(Session.groovy:1123)
+	at nextflow.Session.notifyFlowComplete(Session.groovy:1093)
+	at nextflow.Session.shutdown0(Session.groovy:775)
+	at nextflow.Session.abort(Session.groovy:830)
+	at nextflow.Session.fault(Session.groovy:792)
+	at nextflow.processor.TaskPollingMonitor.finalizeTask(TaskPollingMonitor.groovy:753)
+	at nextflow.processor.TaskPollingMonitor.safeFinalizeTask(TaskPollingMonitor.groovy:736)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1341)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1096)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+	at nextflow.processor.TaskPollingMonitor$_checkTaskStatus_lambda8.doCall(TaskPollingMonitor.groovy:726)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Oct-03 16:46:03.596 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-03 16:46:03.644 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
