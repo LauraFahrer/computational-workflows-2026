@@ -1,4 +1,6 @@
-params.step = 0
+params {
+    step: Integer = 0
+}
 
 process PRINT_SAMPLESHEET {
     debug(true)
