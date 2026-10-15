@@ -5,3 +5,8 @@ results/
 results_differentialabundance/
 null/
 results_fastqc/
+results_fetch
+SRA_runs
+rnaseq_out_allsamples
+DOWNLOAD_FETCHNGS_RESULTS.txt
+DOWNLOAD_MM_CHR19.txt
