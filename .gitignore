@@ -2,4 +2,6 @@
 .nextflow.log*
 work/
 results/
-results_differentialabundance
+results_differentialabundance/
+null/
+results_fastqc/
