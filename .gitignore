@@ -6,6 +6,7 @@ results_differentialabundance/
 null/
 results_fastqc/
 results_fetch
+results_rnaseq
 SRA_runs
 rnaseq_out_allsamples
 DOWNLOAD_FETCHNGS_RESULTS.txt
