@@ -1,0 +1,7 @@
+input: data/samplesheet.csv
+matrix: data/salmon.merged.gene_counts.tsv
+contrasts: data/contrasts.csv
+seed: 42
+outdir: results_differentialabundance
+differential_max_pval: 0.05
+differential_min_fold_change: 1.414
