@@ -1,10 +1,10 @@
 # Fill out your Project Information
 
-Student1: \<name-1>
+Student1: Matthias Lang
 
-Student2: \<name-2>
+Student2: Laura Fahrer
 
-Project Github url: \<github-url> 
+Project Github url: [https://github.com/C0ldCl0ud/GenAbu.git]
 
 
 # Next steps
