@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2,strandedness,seq_platform,seq_center,genome_bam,percent_mapped,transcriptome_bam
+SRX19144486,/home/laura/CW_BMD/computational-workflows-2026/day_02/results_fetch/fastq/SRX19144486_SRR23195516_1.fastq.gz,/home/laura/CW_BMD/computational-workflows-2026/day_02/results_fetch/fastq/SRX19144486_SRR23195516_2.fastq.gz,reverse,,,results_rnaseq/hisat2/SRX19144486.bam,,
